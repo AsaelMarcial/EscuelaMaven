@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="283.0" prefWidth="297.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.escuela.escuelamaven.OrigenFormularioController">
+    <children>
+        <Pane prefHeight="283.0" prefWidth="297.0">
+            <children>
+                <Label layoutX="39.0" layoutY="34.0" text="Estado" />
+                <Label layoutX="39.0" layoutY="119.0" text="Ciudad" />
+                <TextField fx:id="txfEstado" layoutX="38.0" layoutY="65.0" prefHeight="25.0" prefWidth="222.0" />
+                <TextField fx:id="txfCiudad" layoutX="38.0" layoutY="153.0" prefHeight="25.0" prefWidth="222.0" />
+            </children>
+        </Pane>
+        <Button fx:id="btnGuardar" layoutX="38.0" layoutY="220.0" mnemonicParsing="false" onAction="#btnGuardar_Click" prefHeight="25.0" prefWidth="98.0" text="Guardar" />
+        <Button fx:id="btnCancelar" layoutX="162.0" layoutY="220.0" mnemonicParsing="false" onAction="#btnCancelar_Click" prefHeight="25.0" prefWidth="98.0" text="Cancelar" />
+    </children>
+</AnchorPane>

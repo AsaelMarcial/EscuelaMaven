@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="564.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.escuela.escuelamaven.OrigenListaController">
+    <children>
+        <Pane prefHeight="400.0" prefWidth="564.0">
+            <children>
+                <ListView fx:id="listvOrigenes" layoutX="31.0" layoutY="59.0" prefHeight="311.0" prefWidth="305.0" />
+                <Label fx:id="lblPruebaSQL" layoutX="31.0" layoutY="34.0" text="Origen" />
+                <Button fx:id="btnRegistrar" layoutX="385.0" layoutY="164.0" mnemonicParsing="false" onAction="#btnRegistrar_Click" prefHeight="28.0" prefWidth="154.0" style="-fx-background-color: #1FA833;" text="Registrar" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnActualizar" layoutX="385.0" layoutY="220.0" mnemonicParsing="false" onAction="#btnActualizar_Click" prefHeight="28.0" prefWidth="154.0" style="-fx-background-color: #1C67BD;" text="Actualizar" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnEliminar" layoutX="385.0" layoutY="274.0" mnemonicParsing="false" onAction="#btnEliminar_Click" prefHeight="28.0" prefWidth="154.0" style="-fx-background-color: #A01C1C;" text="Eliminar" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+                <TextField fx:id="txfOrigen" layoutX="359.0" layoutY="59.0" prefHeight="25.0" prefWidth="180.0" />
+                <Button fx:id="btnRegresar" layoutX="453.0" layoutY="345.0" mnemonicParsing="false" onAction="#btnRegresar_Click" prefHeight="31.0" prefWidth="86.0" text="Regresar" />
+                <Label layoutX="363.0" layoutY="34.0" text="Buscar origen" />
+                <Button fx:id="btnBuscar" layoutX="385.0" layoutY="111.0" mnemonicParsing="false" onAction="#btnBuscar_Click" prefHeight="28.0" prefWidth="154.0" style="-fx-background-color: #9E3E89;" text="Buscar" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
