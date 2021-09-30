@@ -74,7 +74,7 @@ public class OrigenListaController implements Initializable{
         if (listvOrigenes.getSelectionModel().getSelectedItem() != null) {
             origenSeleccionado = listvOrigenes.getSelectionModel().getSelectedItem();
 
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("OrigenFormularioFXML.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("OrigenFormularioView.fxml"));
             Parent root = loader.load();
             OrigenFormularioController controlador = loader.getController();
             controlador.setDatos(origenSeleccionado);
