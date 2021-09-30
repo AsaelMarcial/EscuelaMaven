@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="583.0" prefWidth="297.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.escuela.escuelamaven.TutorFormularioController">
+    <children>
+        <Pane prefHeight="513.0" prefWidth="297.0">
+            <children>
+                <Label layoutX="39.0" layoutY="34.0" text="Identificador madre" />
+                <Label layoutX="39.0" layoutY="92.0" text="Nombre madre" />
+                <Label layoutX="39.0" layoutY="151.0" text="Identificador padre" />
+                <Label layoutX="39.0" layoutY="210.0" text="Nombre padre" />
+                <TextField fx:id="txfIdentMadre" layoutX="39.0" layoutY="51.0" prefHeight="25.0" prefWidth="222.0" />
+                <TextField fx:id="txfNomPadre" layoutX="39.0" layoutY="227.0" prefHeight="25.0" prefWidth="222.0" />
+                <TextField fx:id="txfNomMadre" layoutX="39.0" layoutY="109.0" prefHeight="25.0" prefWidth="222.0" />
+                <TextField fx:id="txfIdentPadre" layoutX="39.0" layoutY="168.0" prefHeight="25.0" prefWidth="222.0" />
+                <Label layoutX="39.0" layoutY="264.0" text="Direccion" />
+                <TextField fx:id="txfDirecElec" layoutX="38.0" layoutY="281.0" prefHeight="25.0" prefWidth="222.0" />
+                <Label layoutX="38.0" layoutY="452.0" text="Estudiante" />
+                <ComboBox fx:id="cmbEstudiantes" layoutX="39.0" layoutY="469.0" prefHeight="25.0" prefWidth="222.0" />
+                <TextField fx:id="txfTelefono" layoutX="39.0" layoutY="344.0" prefHeight="25.0" prefWidth="222.0" />
+                <Label layoutX="39.0" layoutY="327.0" text="Teléfono 1" />
+                <TextField fx:id="txfTelefono2" layoutX="38.0" layoutY="408.0" prefHeight="25.0" prefWidth="222.0" />
+                <Label layoutX="39.0" layoutY="391.0" text="Teléfono 2" />
+            </children>
+        </Pane>
+        <Button fx:id="btnGuardar" layoutX="40.0" layoutY="533.0" mnemonicParsing="false" onAction="#btnGuardar_Click" prefHeight="25.0" prefWidth="98.0" text="Guardar" />
+        <Button fx:id="btnCancelar" layoutX="164.0" layoutY="533.0" mnemonicParsing="false" onAction="#btnCancelar_Click" prefHeight="25.0" prefWidth="98.0" text="Cancelar" />
+    </children>
+</AnchorPane>

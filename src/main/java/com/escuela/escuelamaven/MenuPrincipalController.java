@@ -18,11 +18,19 @@ public class MenuPrincipalController {
     public Button btnOrigenes;
     public Button btnColegios;
 
-    public void btnTutores_Click(ActionEvent actionEvent) {
+    public void btnTutores_Click(ActionEvent actionEvent) throws IOException  {
+        Stage stage = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("TutorListaView.fxml"));
+        Scene scene = new Scene(root);
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.setScene(scene);
+        stage.setResizable(false);
+        stage.setTitle("Lista de tutores");
+        Stage stageActual = (Stage) btnAdministrarEstudiantes.getScene().getWindow();
+        stageActual.close();
+        stage.show();
     }
 
-    public void btnHistoriasAcademicas_Click(ActionEvent actionEvent) {
-    }
 
     public void btnAdministrarEstudiantes_Click(ActionEvent actionEvent) throws IOException {
         Stage stage = new Stage();
@@ -61,5 +69,8 @@ public class MenuPrincipalController {
         Stage stageActual = (Stage) btnColegios.getScene().getWindow();
         stageActual.close();
         stage.show();
+    }
+
+    public void btnSalud_Click(ActionEvent actionEvent) {
     }
 }
