@@ -17,13 +17,6 @@ public class MenuPrincipalController {
     public Button btnHistoriasAcademicas;
     public Button btnOrigenes;
     public Button btnColegios;
-    @FXML
-    private Label welcomeText;
-
-    @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
-    }
 
     public void btnTutores_Click(ActionEvent actionEvent) {
     }
@@ -31,13 +24,22 @@ public class MenuPrincipalController {
     public void btnHistoriasAcademicas_Click(ActionEvent actionEvent) {
     }
 
-    public void btnAdministrarEstudiantes_Click(ActionEvent actionEvent) {
-
+    public void btnAdministrarEstudiantes_Click(ActionEvent actionEvent) throws IOException {
+        Stage stage = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("EstudianteListaView.fxml"));
+        Scene scene = new Scene(root);
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.setScene(scene);
+        stage.setResizable(false);
+        stage.setTitle("Lista de estudiantes");
+        Stage stageActual = (Stage) btnAdministrarEstudiantes.getScene().getWindow();
+        stageActual.close();
+        stage.show();
     }
 
     public void btnOrigenes_Click(ActionEvent actionEvent) throws IOException {
         Stage stage = new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("OrigenesListaFXML.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("OrigenListaView.fxml"));
         Scene scene = new Scene(root);
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.setScene(scene);
@@ -50,7 +52,7 @@ public class MenuPrincipalController {
 
     public void btnColegios_Click(ActionEvent actionEvent) throws IOException{
         Stage stage = new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("ColegioListaView.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("ColegiosListaView.fxml"));
         Scene scene = new Scene(root);
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.setScene(scene);

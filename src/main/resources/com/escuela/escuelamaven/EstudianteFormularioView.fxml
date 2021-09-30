@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="548.0" prefWidth="297.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.escuela.escuelamaven.EstudianteFormularioController">
+    <children>
+        <Pane prefHeight="476.0" prefWidth="297.0">
+            <children>
+                <Label layoutX="39.0" layoutY="34.0" text="Primer nombre" />
+                <Label layoutX="39.0" layoutY="92.0" text="Segundo nombre (opcional)" />
+                <Label layoutX="39.0" layoutY="151.0" text="Apellido paterno" />
+                <Label layoutX="39.0" layoutY="210.0" text="Apellido materno (opcional)" />
+                <TextField fx:id="txfPrimerNombre" layoutX="39.0" layoutY="51.0" prefHeight="25.0" prefWidth="222.0" />
+                <TextField fx:id="txfApellidoMaterno" layoutX="39.0" layoutY="227.0" prefHeight="25.0" prefWidth="222.0" />
+                <TextField fx:id="txfSegundoNombre" layoutX="39.0" layoutY="109.0" prefHeight="25.0" prefWidth="222.0" />
+                <TextField fx:id="txfApellidoPaterno" layoutX="39.0" layoutY="168.0" prefHeight="25.0" prefWidth="222.0" />
+                <ComboBox fx:id="cmbColegio" layoutX="39.0" layoutY="306.0" prefHeight="25.0" prefWidth="222.0" />
+                <Label layoutX="40.0" layoutY="289.0" text="Colegio" />
+                <Label layoutX="38.0" layoutY="409.0" text="Historial" />
+                <TextField fx:id="txfHistorial" layoutX="39.0" layoutY="426.0" prefHeight="25.0" prefWidth="222.0" />
+                <CheckBox fx:id="chkbEstaActivo" layoutX="39.0" layoutY="263.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="107.0" text="Está activo" />
+                <Label layoutX="39.0" layoutY="345.0" text="Origen" />
+                <ComboBox fx:id="cmbOrigen" layoutX="38.0" layoutY="362.0" prefHeight="25.0" prefWidth="222.0" />
+            </children>
+        </Pane>
+        <Button fx:id="btnGuardar" layoutX="38.0" layoutY="487.0" mnemonicParsing="false" onAction="#btnGuardar_Click" prefHeight="25.0" prefWidth="98.0" text="Guardar" />
+        <Button fx:id="btnCancelar" layoutX="162.0" layoutY="487.0" mnemonicParsing="false" onAction="#btnCancelar_Click" prefHeight="25.0" prefWidth="98.0" text="Cancelar" />
+    </children>
+</AnchorPane>

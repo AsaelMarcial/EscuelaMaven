@@ -11,7 +11,7 @@
         <Button layoutX="161.0" layoutY="155.0" mnemonicParsing="false" onAction="#btnTutores_Click" prefHeight="25.0" prefWidth="278.0" text="Tutores" />
         <Button layoutX="161.0" layoutY="200.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="278.0" text="Informacion de salud" />
         <Button fx:id="btnOrigenes" layoutX="161.0" layoutY="246.0" mnemonicParsing="false" onAction="#btnOrigenes_Click" prefHeight="25.0" prefWidth="278.0" text="Origenes" />
-        <Button fx:id="btnColegios"layoutX="161.0" layoutY="295.0" mnemonicParsing="false" onAction="#btnColegios_Click"prefHeight="25.0" prefWidth="278.0" text="Colegios" />
+        <Button fx:id="btnColegios" layoutX="161.0" layoutY="295.0" mnemonicParsing="false" onAction="#btnColegios_Click" prefHeight="25.0" prefWidth="278.0" text="Colegios" />
         <Label layoutX="130.0" layoutY="29.0" text="Administrar" />
     </children>
 </AnchorPane>
