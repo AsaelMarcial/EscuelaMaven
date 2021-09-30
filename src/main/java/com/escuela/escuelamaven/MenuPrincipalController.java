@@ -14,9 +14,9 @@ import java.io.IOException;
 
 public class MenuPrincipalController {
     public Button btnAdministrarEstudiantes;
-    public Button btnHistoriasAcademicas;
     public Button btnOrigenes;
     public Button btnColegios;
+    public Button btnSalud;
 
     public void btnTutores_Click(ActionEvent actionEvent) throws IOException  {
         Stage stage = new Stage();
@@ -71,6 +71,16 @@ public class MenuPrincipalController {
         stage.show();
     }
 
-    public void btnSalud_Click(ActionEvent actionEvent) {
+    public void btnSalud_Click(ActionEvent actionEvent) throws IOException{
+        Stage stage = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("InformeSaludListaView.fxml"));
+        Scene scene = new Scene(root);
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.setScene(scene);
+        stage.setResizable(false);
+        stage.setTitle("Informacion de salud");
+        Stage stageActual = (Stage) btnSalud.getScene().getWindow();
+        stageActual.close();
+        stage.show();
     }
 }
