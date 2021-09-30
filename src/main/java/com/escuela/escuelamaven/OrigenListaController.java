@@ -24,7 +24,7 @@ import javax.swing.JOptionPane;
 import pojos.OrigenPOJO;
 
 
-public class OrigenListaController {
+public class OrigenListaController implements Initializable{
     @FXML
     private ListView<OrigenPOJO> listvOrigenes;
     @FXML
@@ -42,6 +42,7 @@ public class OrigenListaController {
     @FXML
     private Button btnBuscar;
 
+    @Override
     public void initialize(URL url, ResourceBundle rb) {
         listvOrigenes.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
 
@@ -120,7 +121,7 @@ public class OrigenListaController {
     @FXML
     private void btnRegresar_Click(ActionEvent event) throws IOException {
         Stage stage = new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("MenuPrincipalFXML.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("MenuPrincipalView.fxml"));
         Scene scene = new Scene(root);
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.setScene(scene);

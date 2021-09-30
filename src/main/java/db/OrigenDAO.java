@@ -2,6 +2,7 @@ package db;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import pojos.EstudiantePOJO;
 import pojos.OrigenPOJO;
 import static db.Conexion.ConectarBD;
 

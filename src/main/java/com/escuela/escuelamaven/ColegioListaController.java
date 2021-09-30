@@ -67,7 +67,7 @@ public class ColegioListaController implements Initializable {
     @FXML
     private void btnRegistrar_Click(ActionEvent event) throws IOException {
         Stage stage = new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("ColegioFormularioFXML.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("ColegioFormularioView.fxml"));
         Scene scene = new Scene(root);
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.setScene(scene);
@@ -84,7 +84,7 @@ public class ColegioListaController implements Initializable {
         if (listvColegio.getSelectionModel().getSelectedItem() != null) {
             colegio = listvColegio.getSelectionModel().getSelectedItem();
 
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("ColegioFormularioFXML.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("ColegioFormularioView.fxml"));
             Parent root = loader.load();
             ColegioFormularioController controlador = loader.getController();
 
@@ -122,7 +122,7 @@ public class ColegioListaController implements Initializable {
     @FXML
     private void btnRegresar_Click(ActionEvent event) throws IOException {
         Stage stage = new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("MenuPrincipalFXML.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("MenuPrincipalView.fxml"));
         Scene scene = new Scene(root);
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.setScene(scene);
