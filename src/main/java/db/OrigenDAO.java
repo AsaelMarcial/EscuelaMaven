@@ -194,9 +194,9 @@ public class OrigenDAO {
                     e.setSeg_nom(rs.getString("seg_nom"));
                     e.setSegundo_ape(rs.getString("seg_ape"));
                     e.setActivo(rs.getBoolean("activo"));
-                    e.setIdColegio(rs.getInt("colegio_idColegio"));
+                    e.setIdColegio(rs.getInt("colegio_idcolegio"));
                     e.setHistorial(rs.getString("historial"));
-                    e.setIdOrigen(rs.getInt("origen_idOrigen"));
+                    e.setIdOrigen(rs.getInt("origen_idorigen"));
 
                     listaEstudiantes.add(e);
 
