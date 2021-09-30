@@ -16,6 +16,7 @@ public class MenuPrincipalController {
     public Button btnAdministrarEstudiantes;
     public Button btnHistoriasAcademicas;
     public Button btnOrigenes;
+    public Button btnColegios;
     @FXML
     private Label welcomeText;
 
@@ -43,6 +44,19 @@ public class MenuPrincipalController {
         stage.setResizable(false);
         stage.setTitle("Origenes");
         Stage stageActual = (Stage) btnOrigenes.getScene().getWindow();
+        stageActual.close();
+        stage.show();
+    }
+
+    public void btnColegios_Click(ActionEvent actionEvent) throws IOException{
+        Stage stage = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("ColegioListaView.fxml"));
+        Scene scene = new Scene(root);
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.setScene(scene);
+        stage.setResizable(false);
+        stage.setTitle("Registrar Colegio");
+        Stage stageActual = (Stage) btnColegios.getScene().getWindow();
         stageActual.close();
         stage.show();
     }
