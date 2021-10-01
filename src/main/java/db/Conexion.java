@@ -9,12 +9,12 @@ public class Conexion {
     public static Connection ConectarBD() throws SQLException {
         Connection conn = null;
         try {
-            conn = DriverManager.getConnection("jdbc:postgresql://localhost:3307/escuelamaven?"
+            conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/EscuelaMaven?"
                     + "user=postgres"
-                    + "&password=Hvzrrs04");
+                    + "&password=");
 
         } catch (SQLException e) {
-            System.out.println("Error de conexión: " + e.getMessage());
+            System.out.println("Error de conexión:  " + e.getMessage());
         }
 
         return conn;

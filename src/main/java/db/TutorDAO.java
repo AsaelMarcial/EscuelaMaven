@@ -34,7 +34,7 @@ public class TutorDAO {
                     t.setIdent_padre(rs.getString("ident_padre"));
                     t.setNom_madre(rs.getString("nom_madre"));
                     t.setNom_padre(rs.getString("nom_padre"));
-                    t.setDirec_elec(rs.getString("direct_elec"));
+                    t.setDirec_elec(rs.getString("direc_elec"));
                     t.setTelefono(rs.getString("telefono"));
                     t.setTelefono_2(rs.getString("telefono_2"));
 
@@ -92,7 +92,7 @@ public class TutorDAO {
 
             if (conn != null) {
                 consulta = "UPDATE tutor "
-                        + "SET idacudiente=?, estudiante_idestudiante=?, ident_madre=?, ident_padre=?, nom_madre=?, nom_padre=?, direct_elec=?, telefono=?, telefono_2=? "
+                        + "SET idacudiente=?, estudiante_idestudiante=?, ident_madre=?, ident_padre=?, nom_madre=?, nom_padre=?, direc_elec=?, telefono=?, telefono_2=? "
                         + "WHERE idacudiente = " + idAcudiente;
                 PreparedStatement ps = conn.prepareStatement(consulta);
                 ps.setInt(1, idAcudiente);
