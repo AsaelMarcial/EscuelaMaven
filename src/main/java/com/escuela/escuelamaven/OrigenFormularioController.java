@@ -25,8 +25,13 @@ public class OrigenFormularioController implements Initializable{
     private boolean datosModificados;
 
     /**
-     * Initializes the controller class.
-     */
+ * Controller del FXML Formulario de Origen, el cual tiene la capacidad de
+ * registrar o actualizar un nuevo Origen
+ *
+ * 
+ * @author leslie
+ * 
+ */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO

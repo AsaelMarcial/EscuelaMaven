@@ -7,6 +7,13 @@ public class ColegioPOJO {
     private String ciudad;
     private String nombre;
 
+    /**
+     *Esta clase contiene los atributos de Colegio
+     * 
+     * @author dltun
+     * 
+     */
+    
     public ColegioPOJO(){
 
     }

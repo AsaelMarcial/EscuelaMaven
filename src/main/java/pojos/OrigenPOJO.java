@@ -5,6 +5,12 @@ public class OrigenPOJO {
     private String estado;
     private String ciudad;
 
+    /**
+     *Esta clase contiene los atributos de Origen
+     * 
+     * @author leslie
+     * 
+     */
     public OrigenPOJO() {
     }
 

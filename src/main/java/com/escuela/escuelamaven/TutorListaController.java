@@ -22,10 +22,13 @@ package com.escuela.escuelamaven;
         import pojos.TutorPOJO;
 
 /**
- * FXML Controller class
+ * Controller del FXML de la lista de Tutor, el cual contiene las funcionalidades
+ * CRUD de Tutor, administrandolos mediante una lista.
  *
- * @author israz
+ * @author isra
+ * 
  */
+
 public class TutorListaController implements Initializable {
 
     @FXML

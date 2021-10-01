@@ -11,6 +11,12 @@ public class EstudiantePOJO {
     private String historial;
     private int idOrigen;
 
+    /**
+     *Esta clase contiene los atributos de Estudiante
+     * 
+     * @author isra
+     * 
+     */
     public EstudiantePOJO() {
     }
 

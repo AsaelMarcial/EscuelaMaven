@@ -11,6 +11,12 @@ public class TutorPOJO {
     private String telefono_2;
     private int idEstudiante;
 
+    /**
+     *Esta clase contiene los atributos de tutor
+     * 
+     * @author asael
+     * 
+     */
     public TutorPOJO() {
     }
 

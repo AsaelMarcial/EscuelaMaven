@@ -12,8 +12,9 @@ import pojos.EstudiantePOJO;
 import pojos.TutorPOJO;
 
 /**
- *
- * @author israz
+ *Contiene todas las consultas necesarias para la base de datos de la clase Tutor
+ * 
+ * @author dltun
  */
 public class TutorDAO {
     public ObservableList<TutorPOJO> ObtenerTutores() {

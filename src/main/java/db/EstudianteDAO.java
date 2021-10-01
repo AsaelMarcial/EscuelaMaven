@@ -11,8 +11,9 @@ import javafx.collections.ObservableList;
 import pojos.EstudiantePOJO;
 
 /**
- *
- * @author israz
+ *Contiene todas las consultas necesarias para la base de datos de la clase Estudiante
+ * 
+ * @author isra
  */
 public class EstudianteDAO {
     public ObservableList<EstudiantePOJO> ObtenerEstudiantes() {

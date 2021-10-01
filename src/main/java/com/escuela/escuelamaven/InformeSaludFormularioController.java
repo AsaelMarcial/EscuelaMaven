@@ -21,6 +21,15 @@ import javafx.stage.Stage;
 import pojos.EstudiantePOJO;
 import pojos.InformeSaludPOJO;
 
+/**
+ * Controller del FXML Formulario de Informe de salud, el cual tiene la capacidad de
+ * registrar o actualizar un nuevo informe de salud
+ *
+ * 
+ * @author asael
+ * 
+ */
+
 public class InformeSaludFormularioController  implements Initializable {
     @FXML
     private Button btnGuardar;

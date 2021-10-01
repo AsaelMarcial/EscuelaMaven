@@ -8,6 +8,14 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+/**
+ * Clase Main del programa por el cual se ejecuta, al correr el programa esta
+ * es la clase que inicializa.
+ *
+ * @author dltun, isra, asael, leslie
+ * 
+ */
+
 public class main extends Application {
     @Override
     public void start(Stage stage) throws IOException {

@@ -11,7 +11,8 @@ import javafx.collections.ObservableList;
 import pojos.ColegioPOJO;
 
 /**
- *
+ *Contiene todas las consultas necesarias para la base de datos de la clase Colegio
+ * 
  * @author dltun
  */
 public class ColegioDAO {

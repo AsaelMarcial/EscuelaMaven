@@ -15,9 +15,12 @@ import javax.swing.JOptionPane;
 import pojos.ColegioPOJO;
 
 /**
- * FXML Controller class
+ * Controller del FXML Formulario de Colegio, el cual tiene la capacidad de
+ * registrar o actualizar un nuevo Colegio
  *
+ * 
  * @author dltun
+ * 
  */
 public class ColegioFormularioController implements Initializable {
 

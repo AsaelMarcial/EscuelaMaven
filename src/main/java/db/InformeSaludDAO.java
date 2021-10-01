@@ -9,7 +9,11 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import pojos.InformeSaludPOJO;
 
-
+/**
+ *Contiene todas las consultas necesarias para la base de datos de la clase Informe de salud
+ * 
+ * @author asael
+ */
 
 public class InformeSaludDAO {
 

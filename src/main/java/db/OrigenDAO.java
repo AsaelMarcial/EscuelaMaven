@@ -12,6 +12,12 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+/**
+ *Contiene todas las consultas necesarias para la base de datos de la clase Origen
+ * 
+ * @author leslie
+ */
+
 public class OrigenDAO {
     public ObservableList<OrigenPOJO> ObtenerOrigenes() {
         ObservableList<OrigenPOJO> listaOrigenes = FXCollections.observableArrayList();

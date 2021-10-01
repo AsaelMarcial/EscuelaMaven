@@ -16,6 +16,15 @@ import javafx.stage.Stage;
 import pojos.EstudiantePOJO;
 import pojos.TutorPOJO;
 
+/**
+ * Controller del FXML Formulario de Tutor, el cual tiene la capacidad de
+ * registrar o actualizar un nuevo Tutor
+ *
+ * 
+ * @author isra
+ * 
+ */
+
 public class TutorFormularioController implements Initializable {
 
     @FXML

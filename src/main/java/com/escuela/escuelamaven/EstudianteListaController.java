@@ -29,6 +29,14 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import pojos.EstudiantePOJO;
 
+/**
+ * Controller del FXML de la lista de Estudiante, el cual contiene las funcionalidades
+ * CRUD de Estudiante, administrandolos mediante una lista.
+ *
+ * @author isra
+ * 
+ */
+
 public class EstudianteListaController implements Initializable {
 
     @FXML

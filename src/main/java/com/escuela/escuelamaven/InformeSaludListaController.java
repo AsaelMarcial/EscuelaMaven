@@ -21,6 +21,14 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import pojos.InformeSaludPOJO;
 
+/**
+ * Controller del FXML de la lista de Informe de salud, el cual contiene las funcionalidades
+ * CRUD de Informe de salud, administrandolos mediante una lista.
+ *
+ * @author asael
+ * 
+ */
+
 public class InformeSaludListaController implements Initializable {
 
     @FXML

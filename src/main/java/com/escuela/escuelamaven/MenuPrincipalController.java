@@ -12,6 +12,14 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+/**
+ * Menu principal del programa en el cual se puede acceder a todos los modulos CREUD
+ * de las diferentes clases existentes.
+ *
+ * @author dltun, isra, asael, leslie
+ * 
+ */
+
 public class MenuPrincipalController {
     public Button btnAdministrarEstudiantes;
     public Button btnOrigenes;

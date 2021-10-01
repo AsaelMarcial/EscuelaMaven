@@ -23,9 +23,11 @@ import javax.swing.JOptionPane;
 import pojos.ColegioPOJO;
 
 /**
- * FXML Controller class
+ * Controller del FXML de la lista de Colegio, el cual contiene las funcionalidades
+ * CRUD de Colegio, administrandolos mediante una lista.
  *
  * @author dltun
+ * 
  */
 public class ColegioListaController implements Initializable {
 

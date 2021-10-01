@@ -19,6 +19,15 @@ import pojos.ColegioPOJO;
 import pojos.EstudiantePOJO;
 import pojos.OrigenPOJO;
 
+/**
+ * Controller del FXML Formulario de Estudiante, el cual tiene la capacidad de
+ * registrar o actualizar un nuevo Estudiante
+ *
+ * 
+ * @author isra
+ * 
+ */
+
 public class EstudianteFormularioController implements Initializable {
 
     @FXML

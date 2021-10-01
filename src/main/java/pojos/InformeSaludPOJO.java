@@ -6,6 +6,12 @@ public class InformeSaludPOJO {
     private String num_seguro_social;
     private String grupo_sang;
 
+    /**
+     *Esta clase contiene los atributos de Informe de salud
+     * 
+     * @author isra
+     * 
+     */
     public InformeSaludPOJO() {
     }
 

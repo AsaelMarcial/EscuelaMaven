@@ -23,6 +23,14 @@ import javafx.stage.Stage;
 import javax.swing.JOptionPane;
 import pojos.OrigenPOJO;
 
+/**
+ * Controller del FXML de la lista de Origen, el cual contiene las funcionalidades
+ * CRUD de Origen, administrandolos mediante una lista.
+ *
+ * @author leslie
+ * 
+ */
+
 
 public class OrigenListaController implements Initializable{
     @FXML
